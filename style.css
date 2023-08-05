@@ -1,0 +1,48 @@
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+body {
+    background-color: #80CCFE;
+}
+.contenedor-form{
+    background-color: white;
+    width: 400px;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+.contenedor-form .title-form{
+    color: #80CCFE;
+    text-align: center;
+    padding: 8px 0;
+    margin: 0;
+}
+.contenedor-form form input[type=text], input[type=email], input[type=number], textarea {
+    width: 100%;
+    padding: 8px 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: 1px solid #80CCFE;
+    outline: 0 none;
+    border-radius: 5px;
+}
+
+.contenedor-form form .form-button{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 10px;
+    background-color: #80CCFE;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contenedor-form form label{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.contenedor-form .form-ending {
+    font-size: 12px;
+}

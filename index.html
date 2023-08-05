@@ -4,47 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>reto02</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <section id="formulario">
-        <div >
+        <div class="contenedor-form" >
             <header>
-                <h1>Fomulario de contacto</h1>
+                <h1 class="title-form">Fomulario de contacto</h1>
             </header>
             <form action="">
-                <section>
+                <div>
                     <label for="">Nombre*</label>
-                    <input type="text" required placeholder="Escribe tu nombre">
-                </section>
-                <section>
+                    <input autofocus type="text" minlength="3" required placeholder="Escribe tu nombre">
+                </div>
+                <div>
                     <label for="">Email*</label>
-                    <input type="email" required placeholder="Esribe tu Email">
-                </section>
-                <section>
+                    <input  type="email" required placeholder="Esribe tu Email">
+                </div>
+                <div>
                     <label for="">Teléfono</label>
-                    <input type="text" required placeholder="Escribe tu teléfono">
-                </section>
-                <section>
+                    <input  type="number" min="0" max="999999999" required placeholder="Escribe tu teléfono">
+                </div>
+                <div>
                     <label for="">Sitio web</label>
-                    <input type="text" required placeholder="Escribe la URL de tu web">
-                </section>
-                <section>
+                    <input  type="text" required placeholder="Escribe la URL de tu web">
+                </div>
+                <div>
                     <label for="">Asunto*</label>
-                    <input type="text" required placeholder="Escribe un asunto">
-                </section>
-                <section>
+                    <input  type="text" required placeholder="Escribe un asunto">
+                </div>
+                <div>
                     <label for="mensaje">Mensaje*</label>
                     <textarea 
-                        name="mensaje" id="mensaje" cols="30" rows="10" 
-                        required placeholder="Deja aquí tu comentario...">
-                    </textarea>
-                </section>
-                <section>
-                    <button>ENVIAR</button>
-                </section>
+                        name="mensaje" id="mensaje" minlength="3" maxlength="300" cols="30" rows="4" 
+                        required placeholder="Deja aquí tu comentario..."></textarea>
+                </div>
+                <div>
+                    <button class="form-button">ENVIAR</button>
+                </div>
             </form>
-            <footer>
-                * los campos son obligatorios
+            <footer >
+                <p class="form-ending">* los campos son obligatorios</p>
             </footer>
         </div>
     </section>
